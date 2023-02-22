@@ -13,12 +13,19 @@
     .form-side{
         background-color: rgba(52, 195, 235);
     }
+
+    .login-container{
+        margin-top: 500px;
+    }
+    body  {
+        background-color: rgb(44, 151, 180);
+    }
  </style>
 </head>
 <body>
     <div class="container  rounded-5">
-        <div class="bg-info m-5"> 
-            <div class="row mt-5 bg-white " > 
+        <div class="bg-info m-5 "> 
+            <div class="row mt-5 bg-white login-container" > 
                 <div class="col p-4">
                     <img src="doctor.jpg" alt="" style="width:35vw; height: auto;">
                 </div>
@@ -31,17 +38,17 @@
                         <form action="patient.html" class="p-4 mx-5" >
                             <div class= "mb-3">
                                 <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" placeholder="Enter Your Username">
+                                <input type="text" class="form-control" placeholder="Enter Your Username" required>
                             </div>
                             <div class=" mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="pasword" placeholder="Enter Your Password">
+                                <input type="password" class="form-control" name="pasword" placeholder="Enter Your Password" required>
                             </div>
                           <div class="input-group mb-3">
                             <input type="checkbox" class="form-check-inline "><label for="remember" class="form-check-label">Remember me</label> <a href="#" class="px-4">Forgot Password?</a></span>
                           </div>
                             <div class="mb-3 ">
-                                <button class="btn btn-success opacity-50 rounded-5 w-100" type="submit">Submit</button>
+                                <button class="btn btn-success opacity-75 rounded-5 w-100" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
