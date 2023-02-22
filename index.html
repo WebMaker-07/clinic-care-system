@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Boostrap Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Clinic Care System Repository</title>
+ <style>
+    .form-side{
+        background-color: rgba(52, 195, 235);
+    }
+ </style>
 </head>
 <body>
     <div class="container  rounded-5">
@@ -15,9 +22,12 @@
                 <div class="col p-4">
                     <img src="doctor.jpg" alt="" style="width:35vw; height: auto;">
                 </div>
-                <div class="col bg-info bg-opacity-50">
+                <div class="col form-side">
                     <div class="container pt-4"> 
-                        <h2 class="text-center">Sign in</h2>
+                        <h2 class="text-center text-white">Sign in</h2>
+                        <div class="text-center ">
+                            <h2 > <i class="bi bi-facebook"></i> <span><i class="bi bi-instagram"></i></span>   </h2>
+                        </div>
                         <form action="patient.html" class="p-4 mx-5" >
                             <div class= "mb-3">
                                 <label for="username" class="form-label">Username</label>
@@ -27,7 +37,12 @@
                                 <label for="password" class="form-label">Password</label>
                                 <input type="password" class="form-control" name="pasword" placeholder="Enter Your Password">
                             </div>
-                            <button class="btn btn-success" type="submit">Submit</button>
+                          <div class="input-group mb-3">
+                            <input type="checkbox" class="form-check-inline "><label for="remember" class="form-check-label">Remember me</label> <a href="#" class="px-4">Forgot Password?</a></span>
+                          </div>
+                            <div class="mb-3 ">
+                                <button class="btn btn-success opacity-50 rounded-5 w-100" type="submit">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
